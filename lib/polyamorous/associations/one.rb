@@ -18,9 +18,6 @@ module Polyamorous
           end
         RUBY
       end
-      
-      class Proxy
-      end
     end
   end
 end
