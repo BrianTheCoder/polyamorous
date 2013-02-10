@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
   
   gem.add_development_dependency "rspec"
   gem.add_development_dependency "hashie"
+  gem.add_development_dependency "ffaker"
   gem.add_development_dependency "mongoid"
   gem.add_development_dependency "redis"
   gem.add_development_dependency "activerecord"

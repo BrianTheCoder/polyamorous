@@ -1,10 +1,12 @@
 require 'rubygems'
 require 'bundler/setup'
 
+require 'hashie'
+require 'ffaker'
+
 require 'polyamorous'
 
-# Dir["spec/support/**/*.rb")].each {|f| require f}
-puts __FILE__
+Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each{|f| require f }
 
 RSpec.configure do |config|
 

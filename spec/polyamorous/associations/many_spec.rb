@@ -1,11 +1,12 @@
 require 'spec_helper'
 
 describe Polyamorous::Associations::Many do
-  it 'creates a many association'
-  it 'adds an instance method'
-  it 'returns an array'
-  it 'builds a new association'
-  
-  context 'class option' do
+  before do
+    @author = Author.new({
+      name: Faker::Name.name,
+      email: Faker::Internet.free_email
+    })
   end
+  
+  it{ @author.should respond_to(:articles)}
 end

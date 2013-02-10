@@ -5,5 +5,5 @@ class Article < Hashie::Dash
   property :body
   property :published_at
   
-  parent :author
+  one :author
 end

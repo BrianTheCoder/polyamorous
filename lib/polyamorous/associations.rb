@@ -2,6 +2,7 @@ require 'polyamorous/associations/many'
 require 'polyamorous/associations/one'
 require 'polyamorous/adapter/model'
 require 'active_support/concern'
+require 'active_support/core_ext/string'
 
 module Polyamorous
   module Associations
